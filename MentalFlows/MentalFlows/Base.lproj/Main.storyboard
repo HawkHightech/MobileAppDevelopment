@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r2M-4r-XUy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sKo-Wn-4QT">
+            <objects>
+                <tabBarController id="r2M-4r-XUy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6l5-gg-Zfg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.059570752084255219" green="0.12719175219535828" blue="0.21074604988098145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cyan="0.0" magenta="0.1623057098" yellow="0.55325305459999996" black="0.0046993182040000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BTp-wc-Yd5"/>
+                        <segue destination="eV0-LP-m86" kind="relationship" relationship="viewControllers" id="J0z-N8-aE4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxh-sG-I0y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-768" y="76"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="lBc-PR-gp4">
+            <objects>
+                <viewController id="eV0-LP-m86" customClass="FavoritesTabVC" customModule="MentalFlows" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nnY-dw-4B3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0Zs-5t-5po"/>
+                        <color key="backgroundColor" red="0.059570752084255219" green="0.12719175219535828" blue="0.21074604988098145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" id="34E-OX-DSz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T30-rp-7w3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="480.80357142857139"/>
+        </scene>
+        <!--Readings-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MentalFlows" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love begins from within, and flows from the heart." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91K-V2-5mf">
+                                <rect key="frame" x="29" y="54" width="357" height="383"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="383" id="V8c-Ve-aQX"/>
+                                    <constraint firstAttribute="width" constant="357" id="jao-am-8K8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <color key="textColor" red="0.98041528463363647" green="0.98123162984848022" blue="0.93530994653701782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~ Alex Hawkins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQQ-sW-MvX">
+                                <rect key="frame" x="29" y="442" width="357" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="6ji-Ej-kRZ"/>
+                                    <constraint firstAttribute="width" constant="357" id="poW-Pg-yAR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
+                                <color key="textColor" red="0.98041528463363647" green="0.98123162984848022" blue="0.93530994653701782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5s-e2-Zwy">
+                                <rect key="frame" x="241" y="532" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="9O9-fz-wFH"/>
+                                    <constraint firstAttribute="height" constant="70" id="Lpk-Rb-qw2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="90"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.98041528463363647" green="0.98123162984848022" blue="0.93530994653701782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RightBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kp1-f7-8PH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GI8-FI-xH9">
+                                <rect key="frame" x="158.5" y="539" width="67" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="hZx-P3-eYw"/>
+                                    <constraint firstAttribute="width" constant="67" id="n6l-9n-CF8"/>
+                                </constraints>
+                                <state key="normal" image="HeartUnfilled"/>
+                                <connections>
+                                    <action selector="HeartChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YN2-mj-rtx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-D7-xQS">
+                                <rect key="frame" x="61" y="532" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ESg-zi-iTM"/>
+                                    <constraint firstAttribute="width" constant="70" id="uSP-Tq-07M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="100"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.98041528463363647" green="0.98123162984848022" blue="0.93530994653701782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="LeftBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dh-gg-cql"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9g-F3-aNp">
+                                <rect key="frame" x="142" y="692" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="b0F-2l-zXT"/>
+                                    <constraint firstAttribute="height" constant="50" id="vBK-wJ-7tg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="25"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShareBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rp5-1E-XEp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.059570752084255219" green="0.12719175219535828" blue="0.21074604988098145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="91K-V2-5mf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="1M1-cu-rXo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jQQ-sW-MvX" secondAttribute="trailing" constant="28" id="2Bi-ba-vSI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W9g-F3-aNp" secondAttribute="trailing" constant="172" id="AdR-9O-vTR"/>
+                            <constraint firstItem="GI8-FI-xH9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-15" id="Cde-hU-9cp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W9g-F3-aNp" secondAttribute="bottom" constant="71" id="DNL-ge-fYC"/>
+                            <constraint firstItem="WD2-D7-xQS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="GtX-Lp-kEH"/>
+                            <constraint firstItem="W9g-F3-aNp" firstAttribute="top" secondItem="GI8-FI-xH9" secondAttribute="bottom" constant="77" id="I6q-3M-TbL"/>
+                            <constraint firstItem="WD2-D7-xQS" firstAttribute="top" secondItem="jQQ-sW-MvX" secondAttribute="bottom" constant="13" id="JUX-K4-qMO"/>
+                            <constraint firstItem="jQQ-sW-MvX" firstAttribute="top" secondItem="91K-V2-5mf" secondAttribute="bottom" constant="8" id="Nf8-4H-m1j"/>
+                            <constraint firstItem="k5s-e2-Zwy" firstAttribute="top" secondItem="jQQ-sW-MvX" secondAttribute="bottom" constant="13" id="Or2-mA-ubv"/>
+                            <constraint firstItem="jQQ-sW-MvX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="Pxe-zA-7Zo"/>
+                            <constraint firstItem="GI8-FI-xH9" firstAttribute="leading" secondItem="WD2-D7-xQS" secondAttribute="trailing" constant="27.5" id="Rd9-NR-oNq"/>
+                            <constraint firstItem="91K-V2-5mf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="SqK-8a-DNK"/>
+                            <constraint firstItem="jQQ-sW-MvX" firstAttribute="top" secondItem="91K-V2-5mf" secondAttribute="bottom" constant="5" id="W5a-rM-WhK"/>
+                            <constraint firstItem="jQQ-sW-MvX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XXX-mb-uhm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k5s-e2-Zwy" secondAttribute="trailing" constant="103" id="ZpR-OI-4Bh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WD2-D7-xQS" secondAttribute="bottom" constant="211" id="e7Y-FX-meD"/>
+                            <constraint firstItem="W9g-F3-aNp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="jj7-2W-yjc"/>
+                            <constraint firstItem="GI8-FI-xH9" firstAttribute="top" secondItem="jQQ-sW-MvX" secondAttribute="bottom" constant="20" id="nzN-KM-lWg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="91K-V2-5mf" secondAttribute="trailing" constant="28" id="rs7-y1-knb"/>
+                            <constraint firstItem="k5s-e2-Zwy" firstAttribute="leading" secondItem="GI8-FI-xH9" secondAttribute="trailing" constant="15.5" id="usw-vX-qVg"/>
+                            <constraint firstItem="91K-V2-5mf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w5b-x5-U1l"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Readings" id="uVJ-FH-uL5"/>
+                    <connections>
+                        <outlet property="Authors" destination="jQQ-sW-MvX" id="JR4-7L-JJF"/>
+                        <outlet property="Quotes" destination="91K-V2-5mf" id="aP7-Rf-MBq"/>
+                        <outlet property="heartBtn" destination="GI8-FI-xH9" id="uc4-Cq-z2v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="-244.41964285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HeartUnfilled" width="100" height="100"/>
+    </resources>
+</document>
