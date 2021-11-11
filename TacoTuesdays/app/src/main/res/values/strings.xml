@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TacoTuesdays</string>
+    <string name="steaks">steak</string>
+    <string name="veggies">veggies</string>
+    <string name="chickens">chicken</string>
+    <string name="tacoBtn">Create Taco</string>
+    <string name="salsa">salsa</string>
+    <string name="sourCream">sour cream</string>
+    <string name="cheese">cheese</string>
+    <string name="guacamole">guacamole</string>
+    <string name="glutenFree">gluten free</string>
+
+    <string-array name="location">
+        <item>The Hill</item>
+        <item>Pearl Street</item>
+    </string-array>
+</resources>
