@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TacoTuesdays</string>
+    <string name="steaks">steak</string>
+    <string name="veggies">veggies</string>
+    <string name="chickens">chicken</string>
+    <string name="tacoBtn">Create Taco</string>
+    <string name="salsa">salsa</string>
+    <string name="sourCream">sour cream</string>
+    <string name="cheese">cheese</string>
+    <string name="guacamole">guacamole</string>
+    <string name="glutenFree">gluten free</string>
+    <string name="locationButton">Find Tacos</string>
+
+    <string-array name="location">
+        <item>The Hill</item>
+        <item>Pearl Street</item>
+    </string-array>
+    <string name="title_activity_taco">TacoActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="feedbackHint">Feedback</string>
+</resources>
