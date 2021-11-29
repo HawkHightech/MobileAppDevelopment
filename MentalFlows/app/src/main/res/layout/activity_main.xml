@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111555"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/leftBtn"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="157dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="changeContentOnLeftClick"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/leftButton"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rightBtn"
+        app:layout_constraintEnd_toStartOf="@+id/rightBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rightBtn" />
+
+    <TextView
+        android:id="@+id/quotes"
+        android:layout_width="311dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="144dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/QuoteOne"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/rightBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="311dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="213dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/AuthorOne"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quotes" />
+
+    <TextView
+        android:id="@+id/rightBtn"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="114dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:onClick="changeContentOnRightClick"
+        android:text="@string/rightButton"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftBtn"
+        app:layout_constraintTop_toBottomOf="@+id/quotes" />
+
+    <Button
+        android:id="@+id/shareContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="@string/shareContents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authors" />
+
+    <ImageView
+        android:id="@+id/hearts"
+        android:layout_width="126dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="44dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="changeHeart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authors"
+        app:srcCompat="@drawable/heart0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
