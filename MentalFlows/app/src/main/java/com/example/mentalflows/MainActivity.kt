@@ -46,14 +46,18 @@ class MainActivity : AppCompatActivity()
 
     }
 
-    // Total number of array elements: 10
+    // Total number of array elements: 20
     var contentForQuotes = arrayOf<String>("Love begins from within, and flows from the heart.", "Breathe in for 4 seconds. Hold it. Breathe out for 3 seconds. Repeat.",
         "Life goes on. Let's live on. Life goes on. Let's live on.", "Everything you need will be provided to you at the right place and the right time.", "Great things come from hard work and perserverance.",
         "Appreciate where you are in life and how far you've come. Gratitude attracts more blessings.", "You are balanced. You are loved. You are winning. You are peaceful. You are alive.",
         "All our dreams can come true, if we have the courage to pursue them.", "Your angels are protecting you on your journey. Have faith and trust in what you are doing.",
-        "Focus on getting healthy, getting money and evolving your life.")
-    var contentForAuthors = arrayOf<String>("~ Alex Hawkins", "~ Jhené Aiko", "~ Anonymous", "~ 444bunny", "~ Kobe Bryant", "~ Carmelo Anthony", "~ 444bunny", "~ Walt Disney", "~ Anonymous", "~ GoldSuite")
-    val AllHeartsOnOff = arrayOf(false, false, false, false, false, false, false, false, false, false) //Val named HeartOnOff set to an array full of hearts at 0 (false state).
+        "Focus on getting healthy, getting money and evolving your life.", "You are worthy of what you desire. You are resilient and capable of reaching your dreams. Take everything one day at a time.",
+        "The only way to do great work is to love what you do. If you haven’t found it yet, keep searching. It may find you.", "The journey of a million miles begins with a single step.",
+        "Have faith in yourself and in the future.", "Do what you can, with what you have, where you are.", "You are a masterpiece.", "Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.",
+        "Be a positive energy trampoline – absorb what you need and rebound more back.", "Talent wins games, but teamwork and intelligence win championships.", "Love your family, work super hard, live your passion.")
+    var contentForAuthors = arrayOf<String>("~ Alex Hawkins", "~ Jhené Aiko", "~ Anonymous", "~ 444bunny", "~ Kobe Bryant", "~ Carmelo Anthony", "~ 444bunny", "~ Walt Disney", "~ Anonymous", "~ GoldSuite", "~ Anonymous", "~ Steve Jobs", "~ Lao Tzu", "~ Ted Kennedy", "~ Theodore Roosevelt",
+        "~ Anonymous", "~ John Wooden", "~ Dave Carolan", "~ Michael Jordan", "~ Gary Vaynerchuk")
+    val AllHeartsOnOff = arrayOf(false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false) //Val named AllHeartsOnOff set to an array full of hearts at 0 (false state).
     //var heartSet = false
 
     fun changeContentOnLeftClick(view: View)
