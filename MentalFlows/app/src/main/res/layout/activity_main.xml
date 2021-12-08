@@ -15,50 +15,35 @@
         android:layout_marginEnd="157dp"
         android:clickable="true"
         android:focusable="true"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:onClick="changeContentOnLeftClick"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/leftButton"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="@+id/rightBtn"
         app:layout_constraintEnd_toStartOf="@+id/rightBtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rightBtn" />
+        app:layout_constraintTop_toTopOf="@+id/hearts"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/quotes"
         android:layout_width="311dp"
         android:layout_height="0dp"
         android:layout_marginTop="47dp"
-        android:layout_marginBottom="144dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="@string/QuoteOne"
+        android:text="@string/quote"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/rightBtn"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/hearts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.125" />
-
-    <TextView
-        android:id="@+id/authors"
-        android:layout_width="311dp"
-        android:layout_height="86dp"
-        android:layout_marginBottom="213dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center"
-        android:text="@string/AuthorOne"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quotes" />
 
     <TextView
         android:id="@+id/rightBtn"
@@ -77,31 +62,33 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/leftBtn"
-        app:layout_constraintTop_toBottomOf="@+id/quotes" />
+        app:layout_constraintTop_toTopOf="@+id/hearts"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/shareContents"
+        android:id="@+id/shareContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:text="@string/shareContents"
+        android:layout_marginTop="60dp"
+        android:text="@string/shareContent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/authors" />
+        app:layout_constraintTop_toBottomOf="@+id/hearts" />
 
     <ImageView
         android:id="@+id/hearts"
-        android:layout_width="126dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="106dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="160dp"
         android:clickable="true"
         android:focusable="true"
         android:onClick="changeHeart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/authors"
-        app:srcCompat="@drawable/heart0" />
+        app:layout_constraintTop_toBottomOf="@+id/quotes"
+        app:srcCompat="@drawable/heart0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
